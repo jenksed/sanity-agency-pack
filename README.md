@@ -1,5 +1,3 @@
-Certainly! Below is a `README.md` file for a Sanity Agency Pack, covering all the contents and providing an overview of the directory structure, files, and their purposes.
-
 ```markdown
 # Sanity Agency Pack
 
