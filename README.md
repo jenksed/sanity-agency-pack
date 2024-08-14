@@ -1,6 +1,3 @@
-Certainly! Below is a `README.md` file for a Sanity Agency Pack, covering all the contents and providing an overview of the directory structure, files, and their purposes.
-
-```markdown
 # Sanity Agency Pack
 
 Welcome to the Sanity Agency Pack! This package provides a comprehensive setup for a corporate website using Sanity, including schemas, components, static assets, and configuration files.
