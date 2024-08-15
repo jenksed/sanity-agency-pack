@@ -1,45 +1,25 @@
 export default {
-    name: 'navigation',
-    title: 'Navigation Menu',
-    type: 'document',
-    fields: [
-      {
-        name: 'title',
-        title: 'Menu Title',
-        type: 'string',
-        description: 'The title of the navigation menu (e.g., Main Menu, Footer Menu)',
-      },
-      {
-        name: 'menuItems',
-        title: 'Menu Items',
-        type: 'array',
-        of: [
-          {
-            type: 'object',
-            fields: [
-              { name: 'title', title: 'Title', type: 'string' },
-              { name: 'link', title: 'Link', type: 'url' },
-              {
-                name: 'subMenu',
-                title: 'Sub Menu',
-                type: 'array',
-                of: [
-                  {
-                    type: 'object',
-                    fields: [
-                      { name: 'title', title: 'Sub Menu Title', type: 'string' },
-                      { name: 'link', title: 'Sub Menu Link', type: 'url' },
-                    ],
-                  },
-                ],
-                options: {
-                  collapsible: true,
-                },
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  };
-  
+  mainMenu: [
+    { title: "Home", path: "/" },
+    { title: "About Us", path: "/about" },
+    { title: "Services", path: "/services", subMenu: [
+      { title: "Consulting", path: "/services/consulting" },
+      { title: "Strategy", path: "/services/strategy" },
+      { title: "Technology", path: "/services/technology" }
+    ]},
+    { title: "Case Studies", path: "/case-studies" },
+    { title: "Blog", path: "/blog" },
+    { title: "Contact", path: "/contact" }
+  ],
+  footerMenu: [
+    { title: "Privacy Policy", path: "/privacy-policy" },
+    { title: "Terms of Service", path: "/terms-of-service" },
+    { title: "Careers", path: "/careers" },
+    { title: "Sitemap", path: "/sitemap" }
+  ],
+  socialLinks: [
+    { title: "LinkedIn", url: "https://www.linkedin.com/company/corporatewebsite" },
+    { title: "Twitter", url: "https://www.twitter.com/corporatewebsite" },
+    { title: "Facebook", url: "https://www.facebook.com/corporatewebsite" }
+  ]
+};
